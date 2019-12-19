@@ -1,4 +1,4 @@
-# HW1
+# HW1 - Linear Regression
 ## Intro - PM2.5 Prediction
 ### Tasks Description
 - 本次作業的資料是從行政院環境環保署空氣品質監測網所下載的觀測資料。
