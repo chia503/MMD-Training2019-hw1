@@ -55,12 +55,13 @@
   - You can use any 
 
 ## Handin Format
-- Kaggle deadline：01/02/2019 
-- Github code & report deadline：01/05/2019 
-- 你的github上至少有下列3個檔案（格式必須完全一樣）：
-  - ML2019SPRING/hw1/report.pdf
-  - ML2019SPRING/hw1/hw1.sh
-  - ML2019SPRING/hw1/hw1_best.sh
+- Kaggle : **pass simple and strong baseline** (由於目前算是late submission, 因此不會出現在leaderboard上, 可直接將最佳成績截圖上傳)
+- Github code & report
+  - 你的github上至少有下列3個檔案（格式必須完全一樣）：
+    - ML2019SPRING/hw1/report.pdf
+    - ML2019SPRING/hw1/hw1.sh
+    - ML2019SPRING/hw1/hw1_best.sh
+  - 請使用 **git push**, 避免直接上傳檔案
 - 請勿上傳 train.csv, test.csv等等dataset!!!
 - 你的github上可能還有其他檔案：
   e.g. ML2019SPRING/hw1/model.npy
