@@ -18,7 +18,7 @@
   - 第一行必須是 id,value
   - 第二行開始，每行分別為id值及預測PM2.5數值，以逗號隔開
 - 範例格式：
-
+  ![image](https://github.com/MMD-Training-2019/HW1/blob/master/images/submission.png)
 ## Kaggle
 - 請自行到kaggle創建帳號
 - Link: https://www.kaggle.com/c/ml2019spring-hw1
