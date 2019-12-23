@@ -9,7 +9,9 @@
   - test.csv : 從剩下的資料當中取樣出連續的10小時為一筆，前九小時的所有觀測數據當作feature，第十小時的PM2.5當作answer。一共取出240筆不重複的test data，請根據feauure預測這240筆的PM2.5。
 - Data含有18項觀測數據 AMB_TEMP, CH4, CO, NHMC, NO, NO2, NOx, O3, PM10, PM2.5, RAINFALL, RH, SO2, THC, WD_HR, WIND_DIREC, WIND_SPEED, WS_HR。
 ### Training Data
+![image](https://raw.githubusercontent.com/MMD-Training-2019/HW1/master/images/train.png)
 ### Testing Data
+![image](https://github.com/MMD-Training-2019/HW1/blob/master/images/test.png)
 ### Sample Submission 
 - 預測240筆testing data中的PM2.5值，將預測結果上傳至kaggle
   - Upload format : csv file
