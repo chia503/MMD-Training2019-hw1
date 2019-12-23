@@ -22,6 +22,8 @@
 ## Kaggle
 - 請自行到kaggle創建帳號
 - Link: https://www.kaggle.com/c/ml2019spring-hw1
+- 點選 Late Submission 加入競賽
+  ![image](https://github.com/MMD-Training-2019/HW1/blob/master/images/kaggle.png)
 - 個人進行、不須組隊
 - Maximum Daily Submission: 5 times
 - test.csv的240筆資料分為：120筆public、120筆private
