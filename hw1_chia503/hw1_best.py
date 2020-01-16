@@ -11,7 +11,8 @@ import csv
 
 mean = np.load('mean.npy')     
 std = np.load('std.npy')
-w = np.load('weight_best.npy')                                 
+w_1 = np.load('weight_1_best.npy')  
+w_2 = np.load('weight_2_best.npy')                              
 test_old_data = np.genfromtxt(sys.argv[1], delimiter=',')   
 test_data = test_old_data[:, 2: ]
 Nan = np.isnan(test_data)
@@ -31,9 +32,10 @@ for i in range(test_x.shape[0]):
 
 
 test_x = np.concatenate((np.ones(shape = (test_x.shape[0],1)),test_x),axis = 1).astype(float)
-answer = test_x.dot(w) 
+test_x_2degree = test_x**2
+answer = test_x.dot(w_1) + test_x_2degree.dot(w_2)
 
-f = open(sys.argv[2],"w")
+f = open(sys.argv[1],"w")
 w = csv.writer(f)
 title = ['id','value']
 w.writerow(title) 

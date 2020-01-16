@@ -13,7 +13,6 @@ mean = np.load('mean.npy')
 std = np.load('std.npy')                                 
 test_old_data = np.genfromtxt(sys.argv[1], delimiter=',')   
 w = np.load('weight.npy')
-b = np.load('b.npy')
 test_data = test_old_data[:, 2: ]
 Nan = np.isnan(test_data)
 test_data[Nan] = 0
@@ -32,10 +31,9 @@ for i in range(test_x.shape[0]):
 
 
 test_x = np.concatenate((np.ones(shape = (test_x.shape[0],1)),test_x),axis = 1).astype(float)
-new_b = np.transpose(np.true_divide(b,w))
-answer = (test_x+(np.tile(new_b,(test_x.shape[0],1)))).dot(w) 
+answer = test_x.dot(w) 
 
-f = open(sys.argv[2],"w")
+f = open(sys.argv[1],"w")
 w = csv.writer(f)
 title = ['id','value']
 w.writerow(title) 
